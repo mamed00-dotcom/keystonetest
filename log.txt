@@ -1,35 +1,8 @@
-mkdir -p /home/mamed/keystone//build-generic64/overlay
-[1m [35m>>>  (INF) Configuring Buildroot with riscv64_generic_defconfig(B[m
-make -C /home/mamed/keystone//buildroot O=/home/mamed/keystone//build-generic64/buildroot.build BR2_EXTERNAL=/home/mamed/keystone//overlays/keystone riscv64_generic_defconfig
-make[1]: Entering directory '/home/mamed/keystone/buildroot'
-  GEN     /home/mamed/keystone/build-generic64/buildroot.build/Makefile
-#
-# configuration written to /home/mamed/keystone/build-generic64/buildroot.build/.config
-#
-make[1]: Leaving directory '/home/mamed/keystone/buildroot'
-echo "BR2_ROOTFS_OVERLAY=\"/home/mamed/keystone//build-generic64/overlay \"" >> /home/mamed/keystone//build-generic64/buildroot.build/.config
-echo "BR2_CCACHE_DIR=/home/mamed/.buildroot-ccache" >> /home/mamed/keystone//build-generic64/buildroot.build/.config
-[1m [35m>>>  (INF) Building Buildroot(B[m
-set -o pipefail ; make -C /home/mamed/keystone//buildroot O=/home/mamed/keystone//build-generic64/buildroot.build BR2_EXTERNAL=/home/mamed/keystone//overlays/keystone all 2>&1 | \
-            tee /home/mamed/keystone//build-generic64/build.log | LC_ALL=C grep -of scripts/grep.patterns
-[7m>>> host-gcc-final 11.4.0 Building[27m
-make[5]: *** [Makefile:501: _absvsi2.o] Error 1
-make[5]: *** [Makefile:501: _absvdi2.o] Error 1
-make[5]: *** [Makefile:501: _mulvsi3.o] Error 1
-make[5]: *** [Makefile:501: _ucmpdi2.o] Error 1
-make[5]: *** [Makefile:501: _ashldi3.o] Error 1
-make[5]: *** [Makefile:501: _trampoline.o] Error 1
-make[5]: *** [Makefile:501: _clear_cache.o] Error 1
-make[5]: *** [Makefile:501: _lshrdi3.o] Error 1
-make[5]: *** [Makefile:501: _negdi2.o] Error 1
-make[5]: *** [Makefile:501: _addvdi3.o] Error 1
-make[5]: *** [Makefile:501: __main.o] Error 1
-make[5]: *** [Makefile:501: _cmpdi2.o] Error 1
-make[5]: *** [Makefile:501: _subvsi3.o] Error 1
-make[5]: *** [Makefile:501: _ashrdi3.o] Error 1
-make[5]: *** [Makefile:501: _subvdi3.o] Error 1
-make[5]: *** [Makefile:501: _addvsi3.o] Error 1
-make[4]: *** [Makefile:13516: all-target-libgcc] Error 2
-make[3]: *** [Makefile:972: all] Error 2
-make[2]: *** [package/pkg-generic.mk:293: /home/mamed/keystone/build-generic64/buildroot.build/build/host-gcc-final-11.4.0/.stamp_built] Error 2
-make[1]: *** [Makefile:82: _all] Error 2
+This is the log file for the repository.
+Date: 2025-02-27
+Current Date and Time (UTC): 2025-02-27 10:32:53
+Current User's Login: mamed00-dotcom
+
+The user is currently located in a GitHub repository, but possibly a sub-directory of that GitHub repository. Their current URL can tell you specifically, but included is some information about the languages and repository itself.
+repo: mamed00-dotcom/keystonetest
+repo ID: 939924453
